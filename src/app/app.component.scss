@@ -1,0 +1,74 @@
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+}
+
+.bg-img {
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+.top-section {
+    //background-color: aquamarine;
+    text-align: center;
+
+    padding: 100px 0;
+
+    h1 {
+        font-size: 120px;
+        font-weight: bold;
+        color: #f5f5f5;
+        text-shadow: 0px 1px 10px rgba(rgb(0, 0, 0), 1);
+    }
+
+    h2 {
+        font-size: 28px;
+        color: rgb(255, 0, 0);
+        text-shadow: 0px 1px 6px rgba(rgb(165, 19, 19), 0.8);
+    }
+}
+
+.content-section {
+    //background-color: cadetblue;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.bottom-section {
+    //background-color: coral;
+    display: flex;
+
+    app-tabs {
+        margin: auto;
+    }
+}
+
+.change-bg-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+
+    background: rgba($color: black, $alpha: 0.1);
+    color: rgba($color: white, $alpha: 0.7);
+
+    &:hover {
+        background: rgba($color: rgb(165, 19, 19), $alpha: 0.5);
+        color: white;
+    }
+
+    &:active {
+        background: rgba($color: rgb(165, 19, 19), $alpha: 0.8);
+        transform: translateY(1px);
+    }
+
+}
